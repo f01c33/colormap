@@ -3,6 +3,8 @@
 Takes a colormap argument, an image and transforms it by going to greyscale and then to the colormap.
 
 ### instalation
+You need imagemagick installed, follow instructions from [here](https://github.com/gographics/imagick)
+
 ```bash
 go install github.com/f01c33/colormap@latest
 ```
