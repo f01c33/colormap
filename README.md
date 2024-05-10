@@ -16,9 +16,6 @@ colormap magma nature.webp
 ```
 ![magma](./nature.webp_magma_colormap.jpg)
 
-
-magma,inferno,plasma,viridis,cividis,twilight,turbo
-
 ```bash
 colormap inferno nature.webp
 ```
