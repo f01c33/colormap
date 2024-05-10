@@ -41,7 +41,7 @@ func main() {
 	}
 	err = mw.TransformImageColorspace(imagick.COLORSPACE_RGB)
 	if err != nil {
-		fmt.Println("Failed converting image to cmy: ", err.Error())
+		fmt.Println("Failed converting image to rgb: ", err.Error())
 	}
 	it := mw.NewPixelIterator()
 	defer it.Destroy()
