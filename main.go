@@ -52,7 +52,7 @@ func main() {
 			if !p.IsVerified() {
 				panic("unverified pixel")
 			}
-			color := int(p.GetBlue() * 255)
+			color := int(p.GetBlue() * float64(len(cm)))
 			p.SetRed(cm[color][0])
 			p.SetGreen(cm[color][1])
 			p.SetBlue(cm[color][2])
@@ -62,5 +62,8 @@ func main() {
 			break
 		}
 	}
-	mw.WriteImage(os.Args[2] + "_" + os.Args[1] + "_colormap.jpg")
+	err = mw.WriteImage(os.Args[2] + "_" + os.Args[1] + "_colormap.jpg")
+	if err != nil {
+		panic(err)
+	}
 }
